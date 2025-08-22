@@ -1,0 +1,46 @@
+ {
+  "version": "0.2.0",
+  "configurations": [
+  {
+      "name": "Debug Asterisk (Local Launch)",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "/usr/sbin/asterisk",
+      "args": ["-f", "-vvvgc"],  // Консольный режим с максимальным логгированием
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}",
+      "environment": [],
+      "externalConsole": false,
+      "MIMode": "gdb",
+      "miDebuggerPath": "/usr/bin/gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
+    },
+    {
+      "name": "Debug Asterisk (Local Attach)",
+      "type": "cppdbg",
+      "request": "attach",
+      "program": "/usr/sbin/asterisk",
+      "processId": "${command:pickProcess}",
+      "MIMode": "gdb",
+      "miDebuggerPath": "/usr/bin/gdb",
+      "miDebuggerArgs": "--interpreter=mi",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        },
+        {
+          "description": "Set debug mode",
+          "text": "handle SIG33 pass nostop noprint"
+        }
+      ],
+    }
+  ]
+ }
