@@ -199,5 +199,6 @@ Asterisk Ready, что говорит о том, что можно присту�
 
 Далее, можете посмореть в сторону проекта [[https://github.com/asterisk/testsuite asterisk/testsuite]] с наборами тестов для модулей Asterisk и другие материалы
 
-*** [[Скриншоты к статье]]
-*** [[Скрипт для установки зависимостей]] Запускать от root
+*** [[https://github.com/sysadminlab/asterisk-remote-debug/tree/main/screenshots Скриншоты к статье]]
+*** [[https://github.com/sysadminlab/asterisk-remote-debug/blob/main/install_deps.sh Скрипт для установки зависимостей]] Запускать от root
+*** [[https://github.com/sysadminlab/asterisk-remote-debug/blob/main/launch.json launch.json]]
