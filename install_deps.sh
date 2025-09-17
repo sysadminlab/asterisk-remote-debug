@@ -7,6 +7,7 @@ cd asterisk
 #----------------------------------
 # Make sure you have necessary development tools and dependencies installed:
 ./contrib/scripts/install_prereq install
+# Also install GDB
 
 # Configure project with debug support
 # ----------------------------------
